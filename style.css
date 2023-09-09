@@ -258,3 +258,31 @@ a.btn:nth-child(2)::before{
 .social-icons a:hover::before{
     width: 100%;
 }
+
+.home-image{
+    position: relative;
+}
+
+.img-box{
+    width: 100%;
+    max-width: 350px;
+    height:  auto ;
+}
+
+.img-box img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.liquid-shape{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 10%;
+    right: 15%;
+}
+
+.liquid-shape:nth-child(2){
+    filter: blur(50px);
+}
