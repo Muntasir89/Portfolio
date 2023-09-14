@@ -116,41 +116,43 @@ scrollBottom.forEach((el)=>observer.observe(el));
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observe(el));
 
-// Email Activity
+
+// // For Read more activity handling
+// let noOfCharacter = 200;
+// let contents = document.querySelectorAll('.content');
 
 
-function sendEmail(){
-    var params = {
-        from_name: document.getElementById("name").value,
-        email_id: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-    };
-    const serviceID = "service_9uz66xb";
-    const templateID = "template_4sh8spk";
-    //  alert(params.email_id);
-     
-    emailjs.send(serviceID, templateID, params)
-        .then(function(response) {
-           console.log('SUCCESS!', response.status, response.text);
-           alert("Success");
-        }, function(error) {
-            alert("Failed..."+error);
-           console.log('FAILED...', error);
-        });
+// contents.forEach(content => {
+//     // If text length is less that noOfCharac then 
+//     // hide the read more button
+//     if(content.textContent.length < noOfCharacter){
+//         content.nextElementSibling.style.display = "none";
+//     }else{
+//         let displayText = content.textContent.slice(0, noOfCharacter);
+//         let moreText = content.textContent.slice(noOfCharacter);
+//         content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+//     }
+// });
 
-    // emailjs.send(serviceID, templateID, params)
-    // .then(
-    //     res => {
-    //         document.getElementById("name").value = "";
-    //         document.getElementById("email").value = "";
-    //         document.getElementById("message").value = "";
-    //         console.log(res);
-    //         alert("Your message sent successfully");
-    // })
-    // .catch((err) => {
-    //     // console.log(err);
-    //     alert(err);
-    // });
+function readMore(btn){
+    // // alert("Heello");
+    // let post = btn.parentElement.parentElement;
+    // // console.log(post);
+    // post.querySelector(".dots").classList.toggle("hide");
+    // post.querySelector(".more").classList.toggle("hide");
+    // btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
+
+    let service = btn.parentElement.parentElement;
+    service.querySelector(".more").classList.toggle("hide");
+    service.querySelector(".content").classList.toggle("hide");
+    btn.textContent === "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
 }
 
-
+function readMoreAboutMe(btn){
+    
+    let about = btn.parentElement.parentElement;
+    
+    about.querySelector(".more").classList.toggle("hide");
+    about.querySelector(".about-more").classList.toggle("hide");
+    btn.textContent === "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
+}

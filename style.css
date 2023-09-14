@@ -207,6 +207,7 @@ section{
 
 .btn:hover{
     color: var(--hover-color);
+    cursor: pointer;
 }
 
 .btn::before{
@@ -292,14 +293,13 @@ section{
 }
 
 .img-box{
-    width: 100%;
-    max-width: 350px;
-    height:  auto ;
+    text-align: center;
 }
 
 .img-box img{
     width: 100%;
     max-width: 350px;
+    height: auto;
 }
 
 .liquid-shape{
@@ -308,7 +308,7 @@ section{
     height: 100%;
     z-index: -1;
     top: 10%;
-    /* right: 15%; */
+    left: 10%; 
 }
 
 .liquid-shape:nth-child(2){
@@ -335,7 +335,7 @@ section{
     height: auto;
 }
 
-.about-content span{
+.about-content h6{
     color: #fdfdfd;
     font-size: 0.8rem;
     font-weight: 200;
@@ -359,6 +359,11 @@ section{
     color: #fdfdfd;
     font-weight: 300;
     margin-bottom: 1.5rem;
+}
+
+.about-more{
+    color: #fdfdfd;
+    font-weight: 300;
 }
 
 .info-about1,  
@@ -472,6 +477,14 @@ section{
     letter-spacing: 1px;
     color: #bdbdbd;
     line-height: 1.6;
+}
+
+.content, .hide, .more{
+    color: #bdbdbd;
+}
+
+.hide{
+    display: none;
 }
 
 /*---------- skill section ---------------*/
@@ -817,7 +830,53 @@ footer a i{
     transform: translateX(0);
 }
 
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
 
+.popup img{
+    width: 100px;
+    margin-top: -15%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
 
 /*---------- keyframes -------------------*/
 

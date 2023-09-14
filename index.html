@@ -7,11 +7,15 @@
     <title>Muntasir Hossen</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="form.js"></script>
 </head>
 <body>
     <!-- header site -->
     <header>
-        <div class="logo"><span>J</span>ohn</div>
+        <div class="logo"><span>M</span>untasir</div>
         <ul class="navlist">
             <li><a href="#home" style="--i:1;">Home</a></li>
             <li><a href="#about" style="--i:2;">About</a></li>
@@ -25,41 +29,39 @@
     
     <section id="home" class="home">
         <div class="home-content scroll-scale">
-            <h1>Hi! I'm John Pater</h1>
+            <h1>Hi! I'm Muntasir Hossen</h1>
             <div class="change-text">
                 <h3>And I'm</h3>
                 <h3>
-                    <span class="word">Youtuber</span>
-                    <span class="word">Web&nbsp;Designer</span>
-                    <span class="word">Frontend&nbsp;Developer</span>
-                    <span class="word">UX/UI&nbsp;developer</span>
-                    <span class="word">Graphic&nbsp;Designer</span>
+                    <span class="word">Java&nbsp;Developer</span>
+                    <span class="word">Flutter&nbsp;Developer</span>
+                    <span class="word">API&nbsp;Designer</span>
                 </h3>
             </div>
             
-            <p>Product Designer and Digital Creative Director working in design field for 10 years so far specialezed in UI/UX, branding and digital designs.</p>
+            <p>Young motivated engineer with key qualities delligence, responsibility and punctuality. Enjoy new challenges.</p>
             
             <div class="info-box">
                 <div class="email-info">
                     <h5>Email :</h5>
-                    <span>john123@gmail.com</span>
+                    <span>muntasirhossen1704089@gmail.com</span>
                 </div>
                 <div class="behance-info">
-                    <h5>Behance :</h5>
-                    <span>behance.net/john</span>
+                    <!-- <h5>Behance :</h5>
+                    <span>behance.net/john</span> -->
                 </div>
             </div>
         
             <div class="btn-box">
-                <a href="#" class="btn">Download CV</a>
-                <a href="#" class="btn">Hire Me Now!</a>
+                <a href="./files/Muntasir_Hossen_CV.pdf" download class="btn">Download CV</a>
+                <a href="#contact" class="btn">Hire Me Now!</a>
             </div>
         
             <div class="social-icons">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-instagram"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-dribbble"></i></a>
+                <a href="https://www.facebook.com/montachirhossen.monim/"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/montasir-hossen-05b7a3279/"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Muntasir89"><i class="bx bxl-github"></i></a>
+                <!-- <a href="#"><i class="bx bxl-dribbble"></i></a> -->
             </div>
         </div>
     
@@ -69,7 +71,7 @@
             </div>
 
             <div class="liquid-shape">
-                <svg viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                     <path fill="#12f7ff">
                         <animate attributeName="d" 
                         dur="20000ms" 
@@ -129,11 +131,11 @@
         <div class="img-about scroll-scale">
             <img src="img/about-me-pic2.png" alt="">
             <div class="info-about1">
-                <span>10+</span>
+                <span>2+</span>
                 <p>Years of Experience</p>
             </div>
             <div class="info-about2">
-                <span>3+</span>
+                <span>5+</span>
                 <p>Project Complete</p>
             </div>
             <div class="info-about3">
@@ -142,13 +144,20 @@
             </div>
         </div>
         <div class="about-content scroll-scale">
-            <span>Let me introduce myself</span>
+            <h6>Let me introduce myself</h6>
             <h2>About Me</h2>
             <h3>A story of good</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            
+            <p>
+                Hi, I'm Muntasir Hossen. I'm a full stack app developer with a passion for crafting innovative and efficient software solutions.
+                 With a diverse skill set in various technology stacks. I thrive on bringing ideas to life, from concept to deployment. I have honed
+                  my expertise in Java, Flutter and NodeJs. I also love problem solving in different online judge. I have completed my graduation in Computer Science and Engineering in CUET.
+                <span class="more">...</span>
+                <span class="about-more hide"></br>My journey into the world of developement began by creating android apps using java. As I delved depper into the android ecosystem I 
+                    discovered the power of building intuitive and user-friendly mobile applications. This expertise laid the foundation for my 
+                    understanding of mobile developement and user interface design.</span> 
+            </p>
             <div class="btn-box">
-                <a href="#" class="btn">Read More!</a>
+                <a class="btn" onclick="readMoreAboutMe(this)">Read More</a>
             </div>
         </div>
     </section>
@@ -163,27 +172,39 @@
             <div class="service-box">
                 <i class="bx bxs-layer service-icon"></i>
                 <h3>Graphic Designer</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    <span class="more">...</span>
+                    <span class="content hide">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+                    <a class="btn"  onclick="readMore(this)">Read More</a>
                 </div>
             </div>
             
             <div class="service-box">
                 <i class="bx bx-code-alt service-icon"></i>
                 <h3>Graphic Designer</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    <span class="more">...</span>
+                    <span class="content hide">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+                    <a class="btn"  onclick="readMore(this)">Read More</a>
                 </div>
             </div>
             
             <div class="service-box">
                 <i class="bx bx-desktop service-icon"></i>
                 <h3>Graphic Designer</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    <span class="more">...</span>
+                    <span class="content hide">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                </p>
                 <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+                    <a class="btn"  onclick="readMore(this)">Read More</a>
                 </div>
             </div>
         </div>
@@ -201,8 +222,8 @@
                 <h3>Technical Skills</h3>
                 <div class="skill-bar">
                     <div class="info">
-                        <p>HTML</p>
-                        <p>72%</p>
+                        <p>Java</p>
+                        <p>82%</p>
                     </div>
                     <div class="bar">
                         <span class="html"></span>
@@ -211,8 +232,8 @@
 
                 <div class="skill-bar">
                     <div class="info">
-                        <p>Figma</p>
-                        <p>90%</p>
+                        <p>Flutter</p>
+                        <p>85%</p>
                     </div>
                     <div class="bar">
                         <span class="figma"></span>
@@ -221,8 +242,8 @@
 
                 <div class="skill-bar">
                     <div class="info">
-                        <p>Javascript</p>
-                        <p>80%</p>
+                        <p>NodeJS</p>
+                        <p>70%</p>
                     </div>
                     <div class="bar">
                         <span class="javascript"></span>
@@ -231,8 +252,8 @@
 
                 <div class="skill-bar">
                     <div class="info">
-                        <p>CSS</p>
-                        <p>62%</p>
+                        <p>C++</p>
+                        <p>80%</p>
                     </div>
                     <div class="bar">
                         <span class="css"></span>
@@ -244,9 +265,7 @@
                 <div class="professional">
                     <div class="box">
                         <div class="circle" data-dots="80" data-percent="90">
-                            <!-- <div class="points" style="--i:1"></div>
-                            <div class="points" style="--i:1"></div>
-                            <div class="points" style="--i:1"></div> -->
+                            <!-- <div class="points" style="--i:1"></div-->
                         </div>
                         <div class="text">
                             <big>90%</big>
@@ -369,11 +388,11 @@
 
     <section id="contact" class="contact">
         <div class="main-text scroll-scale">
-            <span>Ask me question</span>
+            <span>Drop me a line</span>
             <h2>Contact Me</h2>
         </div>
 
-        <form action="#" class="scroll-scale" method="post">
+        <form class="scroll-scale" method="dialog">
             <input id="name" type="text" placeholder="Your Name" autocomplete="off">
             <input id="email" type="text" placeholder="Your Email" autocomplete="off">
             <!-- <input type="text" placeholder="Your Address"> -->
@@ -384,29 +403,21 @@
             </div>
         </form>
     </section>
-
-    <!-- <p class="scroll-scale">Copyright &copy; 2023 by Muntasir</p> -->
     <footer>
         <h1 class="scroll-scale"><span>Thank you</span> for visiting my portfolio</h1>
     </footer>
 
+    
+    <div class="popup" id="popup">
+        <img id="popupImg" src="./img/404-tick.png" alt="success">
+        <h2 id="popupTitle">Thank you!</h2>
+        <p id="popupSubtitle">Your message has been successfully submitted. Thanks!</p>
+        <button id="popupCloseBtn" type="button" onclick="closePopup()" class="close-btn">OK</button>
+    </div>
+    
+    <div id="toastBox"></div>
+
     <script src="mixitup.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("6hstH5KX2QSRMixVG");
-        })();
-    </script>
-                        <!-- <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-        (function(){
-            emailjs.init("6hstH5KX2QSRMixVG");
-        })();
-        </script> -->
     <script src="script.js"></script>
 </body>
 </html>
