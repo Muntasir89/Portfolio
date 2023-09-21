@@ -308,7 +308,7 @@ section{
     height: 100%;
     z-index: -1;
     top: 10%;
-    left: 10%; 
+    left: 5%; 
 }
 
 .liquid-shape:nth-child(2){
@@ -536,24 +536,29 @@ section{
     box-shadow: var(--neon-box-shadow);
 }
 
-.skill-bar .bar .html{
+.skill-bar .bar .java{
     width: 75%;
-    animation: html 2s;
+    animation: java 2s;
 }
 
-.skill-bar .bar .figma{
+.skill-bar .bar .flutter{
     width: 90% ;
-    animation: figma 2s;
+    animation: flutter 2s;
 }
 
-.skill-bar .bar .javascript{
+.skill-bar .bar .nodejs{
     width: 80% ;
-    animation: javascript 2s;
+    animation: nodejs 2s;
 }
 
-.skill-bar .bar .css{
+.skill-bar .bar .cplusplus{
     width: 62% ;
-    animation: css 2s;
+    animation: cplusplus 2s;
+}
+
+.skill-bar .bar .sql{
+    width: 85% ;
+    animation: sql 2s;
 }
 
 /* skills right */
@@ -896,7 +901,7 @@ footer a i{
     }
 }
 
-@keyframes html{
+@keyframes java{
     0%{
         width: 0%;
     }
@@ -905,7 +910,7 @@ footer a i{
     }
 }
 
-@keyframes figma{
+@keyframes flutter{
     0%{
         width: 0%;
     }
@@ -914,7 +919,7 @@ footer a i{
     }
 }
 
-@keyframes javascript{
+@keyframes nodejs{
     0%{
         width: 0%;
     }
@@ -923,12 +928,21 @@ footer a i{
     }
 }
 
-@keyframes css{
+@keyframes cplusplus{
     0%{
         width: 0%;
     }
     100%{
         width: 62%;
+    }
+}
+
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
     }
 }
 
@@ -1028,7 +1042,8 @@ footer a i{
     }
 
     .liquid-shape{
-        width: 80%;
+        width: 100%;
+        height: 100%;
         top: 10%;
         right: 30%;
     }
@@ -1048,7 +1063,7 @@ footer a i{
 }
 
 @media(max-width: 420px){
-    html{
+    java{
         font-size: 80%;
     }
     footer p{
@@ -1068,5 +1083,11 @@ footer a i{
     }
     .img-about p{
         font-size: 1rem;
+    }
+    .liquid-shape{
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        right: 20%;
     }
 }
