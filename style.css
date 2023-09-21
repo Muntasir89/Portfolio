@@ -100,6 +100,10 @@ span{
     color: var(--hover-color);
 }
 
+#menu-icon{
+    display: none;
+}
+
 section{
     padding: 100px 10%;
 }
