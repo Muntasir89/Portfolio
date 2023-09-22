@@ -551,7 +551,7 @@ section{
 }
 
 .skill-bar .bar .nodejs{
-    width: 80% ;
+    width: 70% ;
     animation: nodejs 2s;
 }
 
@@ -928,7 +928,7 @@ footer a i{
         width: 0%;
     }
     100%{
-        width: 80%;
+        width: 70%;
     }
 }
 
