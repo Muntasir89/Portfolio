@@ -556,7 +556,7 @@ section{
 }
 
 .skill-bar .bar .cplusplus{
-    width: 62% ;
+    width: 80% ;
     animation: cplusplus 2s;
 }
 
@@ -937,7 +937,7 @@ footer a i{
         width: 0%;
     }
     100%{
-        width: 62%;
+        width: 80%;
     }
 }
 
