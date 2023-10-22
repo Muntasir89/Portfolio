@@ -541,12 +541,12 @@ section{
 }
 
 .skill-bar .bar .java{
-    width: 75%;
+    width: 82%;
     animation: java 2s;
 }
 
 .skill-bar .bar .flutter{
-    width: 90% ;
+    width: 85% ;
     animation: flutter 2s;
 }
 
@@ -910,7 +910,7 @@ footer a i{
         width: 0%;
     }
     100%{
-        width: 75%;
+        width: 82%;
     }
 }
 
@@ -919,7 +919,7 @@ footer a i{
         width: 0%;
     }
     100%{
-        width: 90%;
+        width: 85%;
     }
 }
 
