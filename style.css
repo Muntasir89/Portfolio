@@ -550,9 +550,9 @@ section{
     animation: flutter 2s;
 }
 
-.skill-bar .bar .nodejs{
-    width: 70% ;
-    animation: nodejs 2s;
+.skill-bar .bar .figma{
+    width: 90% ;
+    animation: figma 2s;
 }
 
 .skill-bar .bar .cplusplus{
@@ -923,12 +923,12 @@ footer a i{
     }
 }
 
-@keyframes nodejs{
+@keyframes figma{
     0%{
         width: 0%;
-    }
+    }                                                                                       
     100%{
-        width: 70%;
+        width: 90%;
     }
 }
 
